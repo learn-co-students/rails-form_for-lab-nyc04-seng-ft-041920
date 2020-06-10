@@ -1,0 +1,11 @@
+<h1>Classes</h1>
+<table>
+  <th>Title</th>
+  <th>Room Number</th>
+  <% @classes.each do |sc| %>
+    <tr>
+      <td><%= link_to sc.title, school_class_path(sc) %></td>
+      <td><%= sc.room_number %></td>
+    </tr>
+  <%end%>
+</table>
