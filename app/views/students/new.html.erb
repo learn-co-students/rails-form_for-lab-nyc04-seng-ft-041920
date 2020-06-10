@@ -1,0 +1,14 @@
+<h1>Student Form</h1>
+<%= form_for(@student) do |f|%>
+  <table>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <tr>
+      <td><%=f.text_field :first_name %></td>
+      <td><%=f.text_field :last_name %></td>
+    </tr>
+  </table>
+  <%= f.submit %>
+<% end %>
+
+<%# was a table the best thing to make here? idk %>

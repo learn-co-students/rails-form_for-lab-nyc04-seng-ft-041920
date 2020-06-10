@@ -1,0 +1,9 @@
+<h1>Students</h1>
+<table>
+  <th>Name</th>
+  <% @students.each do |student| %>
+    <tr>
+      <td><%= link_to student.to_s, student_path(student)%></td>
+    </tr>
+  <% end %>
+</table>
